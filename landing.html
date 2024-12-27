@@ -9,6 +9,7 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>InterWieV</title>
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -31,7 +32,7 @@
             <div id="op3">
                 <a href="link.com" style="color: black; font-size: 12px;">Know Us <i style="color: black;"
                         class="fa-solid fa-circle-exclamation"></i></a>
-                <button>Request Demo</button>
+                <button id="request">Request Demo</button>
             </div>
         </div>
     </div>
@@ -40,21 +41,23 @@
 
         <div id="choose">
             <form>
-                <div class="person" id="can">
+                
+                    <div class="person" id="can" style="cursor: pointer;" onclick="location.href='intr.html';">
 
+                        <label><input type="radio" name="person">
+                            <span>
+                                <p><b>For Interviewer</b> <i style="color: rgb(56, 55, 55);"
+                                        class="fa-solid fa-arrow-up-right-from-square"></i><br></p>
+                                <P style="color: rgb(93, 89, 89);">Outsource your Interview with Us</P>
+                            </span>
+                        </label>
+
+                    </div>
+                
+                <div class="person" id="int" style="cursor: pointer;" onclick="location.href='intr.html';">
                     <label><input type="radio" name="person">
                         <span>
-                            <p><b>For Interviewer</b> <i style="color: black;"
-                                    class="fa-solid fa-arrow-up-right-from-square"></i><br></p>
-                            <P style="color: rgb(93, 89, 89);">Outsource your Interview with Us</P>
-                        </span>
-                    </label>
-
-                </div>
-                <div class="person" id="int">
-                    <label><input type="radio" name="person">
-                        <span>
-                            <p><b>For Candidate</b> <i style="color: black;"
+                            <p><b>For Candidate</b> <i style="color: rgb(56, 55, 55);"
                                     class="fa-solid fa-arrow-up-right-from-square"></i><br>
                             </p>
                             <p style="color: rgb(93, 89, 89);">Find desired Jobs Here</p>
@@ -66,7 +69,7 @@
 
 
     </div>
-    
+
     <div class="page"></div>
     <div class="page"></div>
     <div class="page"></div>

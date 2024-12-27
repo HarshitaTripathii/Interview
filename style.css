@@ -3,19 +3,19 @@
     padding: 0px;
     /* background-color: #a6d22d; */
 }
-body{
+/* body{
     /* background-color: #9ad621; */
-}
+/* }  */
 #navbar{
     background-color: black;
     width: 100vw;
     height: 30px;
     /* position: fixed; */
 }
-#fixed{
+/* #fixed{
     /* position: fixed; */
     /* z-index: 10000; */
-}
+/* }  */
 
 #flex1{
     display: flex;
@@ -52,7 +52,7 @@ img {
     /* height: 200px; */
     margin-right:280px;
 }
-button{
+#request{
     background-color: black;
     color: white;
     font-size: 12px;
@@ -68,6 +68,74 @@ button{
     border-radius: 8px;       /* Optional: rounded corners */
     cursor: pointer; 
 }
+
+#pfpD {
+    position: relative; /* Ensures the dropdown is positioned relative to the button */
+}
+
+#dropdown {
+    position: absolute;
+    top: 130%; /* Aligns dropdown below the button */
+    left: 0;
+    width: 170px;
+    max-height: 150px; /* Limits height to make it scrollable */
+    overflow-y: auto; /* Enables vertical scrolling */
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: none;
+     /* Initially hidden */
+    z-index: 1000; /* Ensures dropdown is above other elements */
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+.dropOp{
+    margin-bottom: 7px;
+    font-size: 14px;
+    padding: 10px 10px 10px 10px;
+    border-radius:5px ;
+    display: flex;
+    justify-content: space-between;
+
+}
+#pfpImg{
+    margin-top: 10px;
+    margin-right:6px;
+    width: 30px;
+    height: 30px;
+    border: 0.5px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-image: url("pfp.png");
+    background-size: cover;
+}
+#viewProfile{
+    margin-top: 17px;
+}
+#rightpfp{
+    display: flex;
+    width: 180px;
+    height: 50px;
+    justify-content: center;
+    margin-right: 25px;
+    margin-top: 10px;
+    background-color: #bdbbbb;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+#lastOP{
+    margin-bottom: 5px;
+}
+.dropOp:hover{
+    /* background-color: #b9afaf; */
+    border: 0.6px solid #797676;
+    background-color: #bcb8b8;
+    
+}
+
+
+
 #choose{
     display: flex;
     justify-content:space-around;
@@ -82,7 +150,7 @@ button{
 }
 .person{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     /* margin-right: 35px; */
     margin-top: 9px;
     /* border: 2px solid black; */
@@ -116,5 +184,39 @@ label{
 form{
     display: flex;
 }
+#content1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.listP{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 0.5px solid black;
+    /* border-radius:12px; */
+    margin-bottom: 10px;
+    
 
+}
+.pic{
+    width: 100px;
+    height: 100px;
+    display:inline-block;
+    margin-right: 20px;
 
+}
+.descp{
+margin-top: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.pdet{
+    display: flex;
+
+}
+.description{
+    color:rgb(100, 98, 98);;
+}
